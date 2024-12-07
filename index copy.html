@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+   <div class="container">
+        <div class="topside">
+            <img src="calculator.png" class="logo">
+            <h3>Calculator</h3>
+        </div>
+        <div class="navbar">
+          
+            <nav>
+                <ul id ='menulist'>
+                    <li><a href="index.html">Calculator</a></li>
+                    <li><a href="index copy.html">GCD Calculator</a></li>
+                </ul>
+            </nav>
+            <img src="option.png" class="menu-icon" onclick="togglemenu()">
+            
+        </div>
+        <div class="disandcon">
+            <div class="display"> 
+                <div class="dis2">
+                    <div class="text">
+                        <p id="p1">enter your first value</p>
+                        
+
+                    </div>
+                    <div class="nums">
+                        <input id="display"  readonly>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="controls">
+                <div id="keys" class="row 1">
+                    <button class="AC" onclick="clearscreen()"><h6>C</h6></button>
+                    <button class="AC" onclick="appendToDisplay('1')"><h6>1</h6></button>
+                    <button class="AC"  onclick="appendToDisplay('4')"><h6>4</h6></button>
+                    <button class="AC" onclick="appendToDisplay('7')" ><h6>7</h6></button>
+                    
+                </div>
+                <div class="row 2">
+                    <button class="but" onclick="appendToDisplay('-')"><h6>-</h6></button>
+                    <button class="but" onclick="appendToDisplay('2')"><h6>2</h6></button>
+                    <button class="but" onclick="appendToDisplay('5')"><h6>5</h6></button>
+                    <button  class="but"onclick="appendToDisplay('8')"><h6>8</h6></button>
+                    <button  class="but"onclick="appendToDisplay('0')"><h6>0</h6></button>
+                </div>
+                <div class="row 3">
+                    <button class="but" onclick="appendToDisplay('+')"><h6>+</h6></button>
+                    <button class="but" onclick="appendToDisplay('3')"><h6>3</h6></button>
+                    <button class="but" onclick="appendToDisplay('6')"><h6>6</h6></button>
+                    <button class="but" onclick="appendToDisplay('9')"><h6>9</h6></button> 
+                    
+                </div>
+                <div class="row 4">
+                    <button class="AC" onclick="clearscreen()"><h6>Re</h6></button>
+                    <button class="AC" onclick="appendToDisplay('*')"><h6>x</h6></button> 
+                    <button class="AC" onclick="appendToDisplay('/')"><h6>/</h6></button> 
+                    
+                    <button class="but" onclick="appendToDisplay('.')"><h6>.</h6></button> 
+                    <button class="AC" onclick="calculate()"><h6>=</h6></button>
+                    
+                    
+                </div>
+                
+            </div>
+           
+        </div>
+        
+        
+   </div>
+</body>
+<script>
+    var menulist = document.getElementById("menulist");
+    menulist.style.maxHeight = "0px";
+    var cilcked = document.getElementById("buy")
+    function buy(){
+        
+    }
+    function togglemenu(){
+        if(menulist.style.maxHeight == "0px")
+        {
+            menulist.style.maxHeight = "130px";
+        }
+        else
+        {
+            menulist.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+<script src="controler.js"></script>
+<script src="jquery.min.js"></script>
+</html>
