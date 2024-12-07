@@ -511,9 +511,6 @@ button{
         font-size: 5rem;
         color: #000;
     }
-    *{
-        overflow:scroll;
-    }
-
+    
 }
 
