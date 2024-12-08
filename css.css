@@ -1,12 +1,16 @@
 *{
     margin: 0 ;
     padding: 0%;
-    overflow: hidden;
+
 }
 
 body{
     background: var(--Dark-Background, #17171C);
-    margin: 0.5rem;
+   
+    margin-top:2.5rem ;
+    margin-bottom:2.5rem ;
+    margin-left: 0.5rem;
+    margin-right:0.5rem ;
 }
 
 .container{
@@ -24,7 +28,7 @@ body{
 
 .topside{
     display: flex;
-    margin: 0.5rem 1rem 0rem 0px;
+    margin: 0.5rem 1rem 00.5rem 0px;
 }
 
 .menu-icon{
@@ -129,6 +133,7 @@ nav ul #menulist{
 #menulist{
     overflow: hidden;
     transition: 0.5s;
+    margin-top: 2rem;
 }
 
 .disandcon{
@@ -143,7 +148,7 @@ nav ul #menulist{
 
 .display{
 
-    margin: 1rem 10px 2rem 10px;
+    margin: 0.7em 10px 2rem 10px;
     border-radius: 25px;
     background-color: aliceblue;
     padding-bottom: 1rem;
@@ -175,13 +180,14 @@ nav ul #menulist{
 
 .controls{
     display: flex;
+    justify-content: center;
 
 }
 
 .controls > .row{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
 }
 
 
@@ -201,13 +207,26 @@ button{
     border-radius: 100%;
 
    
-    margin: 0.5rem  0.5rem  0.5rem  0.5rem;
+    margin: 0.3rem  0.3rem  0.3rem  0.3rem;
+    padding-left: 2.1rem ;
+    padding-top: 1.5rem ;
+    padding-bottom: 1.5rem ;
+    padding-right: 2.1rem;
+ 
+    
+    border: 0px;
+}
+
+#AC{
+    background-color: rgb(179, 230, 230);
+    border-radius: 100%;
+
+    margin: 0.3rem  0.3rem  0.3rem  0.3rem;
     padding-left: 1.5rem ;
     padding-top: 1.5rem ;
     padding-bottom: 1.5rem ;
     padding-right: 1.5rem;
- 
-    
+
     border: 0px;
 }
 
@@ -238,7 +257,11 @@ button:active{
 /* bigger than se*/
 body{
     background: var(--Dark-Background, #17171C);
-    margin: 0.4rem;
+
+    margin-top:2.4rem ;
+    margin-bottom:2.4rem ;
+    margin-left: 0.4rem;
+    margin-right:0.4rem ;
 }
 
 .container{
@@ -248,17 +271,36 @@ body{
     justify-content: center;
  
 }
+
 button{
     background-color: rgb(179, 230, 230);
     border-radius: 100%;
 
-    margin: 0.5rem  0.5rem  0.5rem  0.5rem;
-    padding-left: 1.5rem ;
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    padding-left: 1.9rem ;
     padding-top: 1.3rem ;
     padding-bottom: 1.3rem ;
-    padding-right: 1.5rem;
+    padding-right: 1.9rem;
 
     border: 0px;
+}
+
+#AC{
+    background-color: rgb(179, 230, 230);
+    border-radius: 100%;
+
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    padding-left: 1.3rem ;
+    padding-top: 1.3rem ;
+    padding-bottom: 1.3rem ;
+    padding-right: 1.3rem;
+
+    border: 0px;
+}
+
+.controls{
+    justify-content: center;
+    margin-top: 0.51rem;
 }
 
 .controls .row h6{
@@ -276,20 +318,29 @@ button{
 
 .display{
 
-    margin: 0.8rem 10px 20px 10px;
+    margin: 01rem 10px 20px 10px;
     border-radius: 25px;
     background-color: aliceblue;
     padding-bottom: 10px;
     padding-top: 10px;
 }
+#menulist{
+    margin-top: 1.5rem;
+}
 
 }
 
 @media  screen and (max-width:24em){
+    #menulist{
+        margin-top: 1.5rem;
+    }
     
     body{
         background: var(--Dark-Background, #17171C);
-        margin: 0.4rem;
+        margin-top:2.4rem ;
+        margin-bottom:2.4rem ;
+        margin-left: 1.5rem;
+        margin-right:1.5rem ;
     }
     
     .container{
@@ -303,13 +354,46 @@ button{
         background-color: rgb(179, 230, 230);
         border-radius: 100%;
     
-        margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-        padding-left: 0.01rem ;
-        padding-top: 01.2rem ;
-        padding-bottom: 1.2rem ;
-        padding-right: 0.01rem;
+        margin: 0.1rem 0.1rem 0.1rem 0.5rem;
+        padding-left: 1.5rem ;
+        padding-top: 1rem ;
+        padding-bottom: 1rem ;
+        padding-right: 1.5rem;
     
         border: 0px;
+    }
+    
+    #AC{
+        background-color: rgb(179, 230, 230);
+        border-radius: 100%;
+    
+        margin: 0.1rem 0.1rem 0.1rem 0.5rem;
+        padding-left: 1rem ;
+        padding-top: 1rem ;
+        padding-bottom: 1rem ;
+        padding-right: 1rem;
+    
+        border: 0px;
+    }
+    
+    .controls{
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .controls > .row{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+    }
+
+   
+    .controls .row .AC h6{
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 1.5rem;
     }
     
     .controls .row h6{
@@ -317,7 +401,7 @@ button{
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .topside{
@@ -327,7 +411,7 @@ button{
     
     .display{
     
-        margin: 0.2rem 10px 0.0rem 10px;
+        margin: 0.8rem 10px 0.0rem 10px;
         border-radius: 25px;
         background-color: aliceblue;
         padding-bottom: 10px;
@@ -335,7 +419,7 @@ button{
     }
     .disandcon{
         width: 100%;
-        margin-top: 0.2rem;
+        margin-top: 0.5rem;
         
     
         display: flex;
@@ -348,7 +432,10 @@ button{
 @media  screen and (min-width:40em){
     body{
         background: var(--Dark-Background, #17171C);
-        margin: 2rem;
+        margin-top:4rem ;
+        margin-bottom:3.8rem ;
+        margin-left: 1rem;
+        margin-right:1rem ;
     }
     
     .container{
@@ -358,15 +445,36 @@ button{
         justify-content: center;
      
     }
+ 
     button{
         background-color: rgb(179, 230, 230);
         border-radius: 100%;
-        margin: 0.3rem 1rem 0.3rem 1rem;
-        padding-left: 2rem ;
-        padding-top: 2rem ;
-        padding-bottom: 2rem ;
-        padding-right: 3rem;
+    
+        margin: 0.5rem 0.5rem 0.5rem 0rem;
+        padding-left: 2.5rem ;
+        padding-top: 1.8rem ;
+        padding-bottom: 1.8rem ;
+        padding-right: 2.5rem;
+    
         border: 0px;
+    }
+    
+    #AC{
+        background-color: rgb(179, 230, 230);
+        border-radius: 100%;
+    
+        margin: 0.5rem 0.5rem 0.5rem 0rem;
+        padding-left: 1.8rem ;
+        padding-top: 1.8rem ;
+        padding-bottom: 1.8rem ;
+        padding-right: 1.8rem;
+    
+        border: 0px;
+    }
+    
+    .controls{
+        justify-content: center;
+        margin-top: 0.51rem;
     }
     
     .controls .row h6{
@@ -379,7 +487,7 @@ button{
     }
 
     .controls .row{
-        margin: 0rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 0rem 1rem;
         
     }
     
@@ -396,7 +504,7 @@ button{
     
     .display{
     
-        margin: 01rem 10px 1rem 10px;
+        margin: 03rem 10px 1rem 10px;
         border-radius: 25px;
         background-color: aliceblue;
         padding-bottom: 1rem;
@@ -426,6 +534,10 @@ button{
         font-size: 5rem;
         color: #000;
     }
+
+    #menulist{
+        margin-top: 3.5rem;
+    }
     
 
 }
@@ -433,7 +545,10 @@ button{
 @media  screen and (min-width:64em){
     body{
         background: var(--Dark-Background, #17171C);
-        margin: 2rem;
+        margin-top:8rem ;
+        margin-bottom: 0rem ;
+        margin-left: 8rem;
+        margin-right:8rem ;
     }
     
     .container{
@@ -443,17 +558,41 @@ button{
         justify-content: center;
      
     }
+ 
     button{
         background-color: rgb(179, 230, 230);
         border-radius: 100%;
-        margin: 1rem 1rem 1rem 1rem;
-        padding-left: 3rem ;
-        padding-top: 3rem ;
-        padding-bottom: 3rem ;
-        padding-right: 4rem;
+    
+        margin: 0.5rem 0.5rem 0.5rem 0rem;
+        padding-left: 3.4rem ;
+        padding-top: 2.5rem ;
+        padding-bottom: 2.5rem ;
+        padding-right: 3.4rem;
+    
         border: 0px;
     }
     
+    
+    
+    #menulist{
+        margin-top: 7.5rem;
+        
+    }
+
+    #AC{
+        background-color: rgb(179, 230, 230);
+        border-radius: 100%;
+    
+        margin: 0.5rem 0.5rem 0.5rem 0rem;
+        padding: 2.5rem;
+    
+        border: 0px;
+    }
+    
+    .controls{
+        justify-content: center;
+        margin-top: 0.51rem;
+    }
     .controls .row h6{
         font-family: "Chakra Petch", sans-serif;
         font-weight: 400;
@@ -481,7 +620,7 @@ button{
     
     .display{
     
-        margin: 01rem 10px 1rem 10px;
+        margin: 03rem 0px 1rem 0px;
         border-radius: 25px;
         background-color: aliceblue;
         padding-bottom: 1rem;
@@ -489,7 +628,7 @@ button{
     }
     .disandcon{
         width: 100%;
-        margin-top: 0.2rem;
+        margin-top: 0rem;
         
     
         display: flex;
